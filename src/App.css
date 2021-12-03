@@ -1,38 +1,204 @@
-.App {
+.App h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search-bar{
+  width: 50vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+  position:relative;
+  margin-top: 20px;
+}
+
+.form{
+  width: fit-content;
+  display:flex;
+  align-items: center;
+  position:absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 25px;
+}
+
+.form-group{
+  display: flex;
+  align-items: center;
+}
+
+.form-group > input{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.btn{
+  height: 40px;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.App{
+  min-height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-ul{
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-child > a{
+  text-decoration: none;
+  color:white;
+  font-size: 1.2rem;
+  padding: 20px;
+  transition-duration: 500ms;
+}
+
+.nav-child > a:hover{
+  background-color: black;
+}
+
+.contents{
+  position: relative
+}
+
+.home-btn-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.home-btn-container > ul{
+  display: flex;
+  list-style-type: none;
+}
+
+.home-btn > a{
+  text-decoration: none;
+  background-color: #323557;
+  border: 2px solid white;
+  border-radius: 5px;
+  color:white;
+  font-size: 1.2rem;
+  padding: 20px;
+  margin: 0px 20px 0px 10px;
+  transition-duration: 300ms;
+}
+
+.home-btn > a:hover{
+  background-color: #777aa3;
+}
+
+.footer{
+  position: sticky;
+  bottom: 0;
+  background-color: #282c34;
+  color: white;
+  padding-left: 30px;
+}
+
+.main{
+  min-height: 100vh;
+}
+
+.download-container{
+  margin-bottom: 20px;
+}
+
+.download-btn{
+  text-decoration: none;
+  color:white;
+  border-radius: 3px;
+  padding: 10px;
+  background-color: #313d57;
+  transition-duration: 300ms;
+}
+
+.download-btn:hover{
+  color: white;
+  background-color: #4a5e8a;
+}
+
+.video-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.error-message{
+  color: red;
+  position:absolute;
+  transform: translateY(40px);
+}
+
+.version-btn-container > ul {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.version-btn-container > ul > li {
+  margin: 30px 20px 10px;
+}
+
+.version-btn-container > ul > li > button {
+  width: 180px;
+  transition-duration: 400ms;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.version-btn-container > ul > li > button:hover{
+  background-color: #23344f;
+}
+
+.link-active > button {
+  background-color: #242526;
+}
+
+.link-active > button:not(:hover){
+  background-color: #242526;
+}
+
+.hint-container{
+  display: flex;
+  justify-content: center;
+}
+
+.hint{
+  background-color: #fff7cc;
+  padding: 5px 10px;
+  border-left: 20px solid #ebcb15;
+  margin-bottom: 20px;
+}
+
+.hint > p {
+  margin-bottom: 0.2rem;
+}
+
+.hint > p > button {
+  padding: 0px 3px;
+  font-size: 0.8rem;
+}
+
+.hint > p > code {
+  margin-left: 20px;
+}
+
+.search-error{
+  position: absolute;
+  color: red;
+  transform: translateX(260px);
 }
