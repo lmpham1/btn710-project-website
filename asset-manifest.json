@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/btn710-project-website/static/css/main.85ef07de.chunk.css",
+    "main.js": "/btn710-project-website/static/js/main.bdfe892b.chunk.js",
+    "main.js.map": "/btn710-project-website/static/js/main.bdfe892b.chunk.js.map",
+    "runtime-main.js": "/btn710-project-website/static/js/runtime-main.c1083a43.js",
+    "runtime-main.js.map": "/btn710-project-website/static/js/runtime-main.c1083a43.js.map",
+    "static/css/2.8c0e6b67.chunk.css": "/btn710-project-website/static/css/2.8c0e6b67.chunk.css",
+    "static/js/2.cd8e1d68.chunk.js": "/btn710-project-website/static/js/2.cd8e1d68.chunk.js",
+    "static/js/2.cd8e1d68.chunk.js.map": "/btn710-project-website/static/js/2.cd8e1d68.chunk.js.map",
+    "static/js/3.df7d0710.chunk.js": "/btn710-project-website/static/js/3.df7d0710.chunk.js",
+    "static/js/3.df7d0710.chunk.js.map": "/btn710-project-website/static/js/3.df7d0710.chunk.js.map",
+    "index.html": "/btn710-project-website/index.html",
+    "static/css/2.8c0e6b67.chunk.css.map": "/btn710-project-website/static/css/2.8c0e6b67.chunk.css.map",
+    "static/css/main.85ef07de.chunk.css.map": "/btn710-project-website/static/css/main.85ef07de.chunk.css.map",
+    "static/js/2.cd8e1d68.chunk.js.LICENSE.txt": "/btn710-project-website/static/js/2.cd8e1d68.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/btn710-project-website/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c1083a43.js",
+    "static/css/2.8c0e6b67.chunk.css",
+    "static/js/2.cd8e1d68.chunk.js",
+    "static/css/main.85ef07de.chunk.css",
+    "static/js/main.bdfe892b.chunk.js"
+  ]
+}
