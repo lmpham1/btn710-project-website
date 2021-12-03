@@ -24,10 +24,10 @@ function App() {
             <Navbar />
           </header>
           <Switch>
-            <Route exact path="/" render={() => <Home token={token} />} />
-            <Route path="/demo" render={() => <DemoHome token={token} />} />
-            <Route path="/report" component={Report} />
-            <Route path="/presentation" component={Presentation} />
+            <Route exact path="/btn710-project-website/" render={() => <Home token={token} />} />
+            <Route path="/btn710-project-website/demo" render={() => <DemoHome token={token} />} />
+            <Route path="/btn710-project-website/report" component={Report} />
+            <Route path="/btn710-project-website/presentation" component={Presentation} />
           </Switch>
         </BrowserRouter>
       </div>
