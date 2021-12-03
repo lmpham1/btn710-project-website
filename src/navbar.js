@@ -6,6 +6,8 @@ function Navbar(props) {
     let activeStyle = {
         backgroundColor: "#373c45"
     }
+    console.log(basename);
+    console.log("hello from nav");
     return (
         <ul className="nav-ul">
             <li className='nav-child'>
