@@ -7,7 +7,6 @@ export default class Home extends React.Component {
     }
 
     render() {
-        const basename = this.props.basename;
         return (
             <div className="container">
                 <h1>Home Page</h1>
@@ -16,9 +15,9 @@ export default class Home extends React.Component {
                     <center>Author: Le Minh Pham, Kash Faeghi</center>
                     <div className="home-btn-container">
                         <ul>
-                            <li className="home-btn"><Link to={basename + "/report"}>Project Report</Link></li>
-                            <li className="home-btn"><Link to={basename + "/presentation"}>Presentation</Link></li>
-                            <li className="home-btn"><Link to={basename + "/demo"}>Demo Site</Link></li>
+                            <li className="home-btn"><Link to="/report">Project Report</Link></li>
+                            <li className="home-btn"><Link to="/presentation">Presentation</Link></li>
+                            <li className="home-btn"><Link to="/demo">Demo Site</Link></li>
                         </ul>
                     </div>
                 </div>

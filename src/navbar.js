@@ -6,21 +6,19 @@ function Navbar(props) {
     let activeStyle = {
         backgroundColor: "#373c45"
     }
-    console.log(basename);
-    console.log("hello from nav");
     return (
         <ul className="nav-ul">
             <li className='nav-child'>
-                <NavLink to={basename + "/"} activeStyle={activeStyle} exact={true}>Home</NavLink>
+                <NavLink to="/" activeStyle={activeStyle} exact={true}>Home</NavLink>
             </li>
             <li className='nav-child'>
-                <NavLink to={basename + "/report"} activeStyle={activeStyle}>Project Report</NavLink>
+                <NavLink to="/report" activeStyle={activeStyle}>Project Report</NavLink>
             </li>
             <li className='nav-child'>
-                <NavLink to={basename + "/presentation"} activeStyle={activeStyle}>Presentation</NavLink>
+                <NavLink to="/presentation" activeStyle={activeStyle}>Presentation</NavLink>
             </li>
             <li className='nav-child'>
-                <NavLink to={basename + "/demo"} activeStyle={activeStyle}>Demo Site</NavLink>
+                <NavLink to="/demo" activeStyle={activeStyle}>Demo Site</NavLink>
             </li>
         </ul>
     )
