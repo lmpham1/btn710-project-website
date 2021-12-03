@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import Home from './home';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 import Login from './login';
 import DemoHome from './demo-home';
 import React, { useState } from 'react';
@@ -18,18 +17,18 @@ function App() {
   return (
     <div className="App">
       <div className='main'>
-        <BrowserRouter>
+        <HashRouter basename={process.env.PUBLIC_URL}>
           <header className="App-header">
             <h2>BTN710 - Demo</h2>
             <Navbar />
           </header>
           <Switch>
-            <Route exact path="/btn710-project-website/" render={() => <Home token={token} />} />
-            <Route path="/btn710-project-website/demo" render={() => <DemoHome token={token} />} />
-            <Route path="/btn710-project-website/report" component={Report} />
-            <Route path="/btn710-project-website/presentation" component={Presentation} />
+            <Route exact path="/" render={() => <Home token={token} />} />
+            <Route path="/demo" render={() => <DemoHome token={token} />} />
+            <Route path="/report" component={Report} />
+            <Route path="/presentation" component={Presentation} />
           </Switch>
-        </BrowserRouter>
+        </HashRouter>
       </div>
       <div className='footer'>&copy; Le Minh Pham</div>
     </div>
