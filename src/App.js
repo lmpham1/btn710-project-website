@@ -9,7 +9,7 @@ import Presentation from './presentation';
 import Navbar from './navbar';
 
 function App() {
-
+  const basename = process.env.PUBLIC_URL;
   const [token, setToken] = useState();
   if (!token) {
     return <Login setToken={setToken} />
@@ -17,13 +17,13 @@ function App() {
   return (
     <div className="App">
       <div className='main'>
-        <HashRouter basename={process.env.PUBLIC_URL}>
+        <HashRouter basename={basename}>
           <header className="App-header">
             <h2>BTN710 - Demo</h2>
-            <Navbar />
+            <Navbar basename={basename} />
           </header>
           <Switch>
-            <Route exact path="/" render={() => <Home token={token} />} />
+            <Route exact path="/" render={() => <Home token={token} basename={basename} />} />
             <Route path="/demo" render={() => <DemoHome token={token} />} />
             <Route path="/report" component={Report} />
             <Route path="/presentation" component={Presentation} />
